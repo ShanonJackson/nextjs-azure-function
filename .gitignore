@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+*/.idea
+.idea/
+
+# next.js
+/.next/
+/out/
+/api/
+
+# misc
+.env
