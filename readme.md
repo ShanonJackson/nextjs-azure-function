@@ -26,4 +26,7 @@ is download time which is normally over azures gigabit network. This solution op
 **A:** Not currently, however its pretty easy to support in the future.
 
 
+## Shoutout
+- Huge thanks to the people maintaining the libraries this code relies on.
+
 
