@@ -1,6 +1,6 @@
 {
   "name": "nextjs-azure-function",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Builds your NextJS /api pages/api folder into a single azure function",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,6 @@
   "dependencies": {
     "@azure/functions": "^1.2.3",
     "@sls-next/lambda-at-edge": "^1.6.0-alpha.9",
-    "fs-extra": "^9.1.0",
-    "next": "^10.0.6"
+    "fs-extra": "^9.1.0"
   }
 }

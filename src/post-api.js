@@ -16,7 +16,7 @@ fs.writeFileSync(
 					type: "httpTrigger",
 					direction: "in",
 					name: "req",
-					methods: ["get", "post", "put", "options", "delete"],
+					methods: ["get", "post", "put", "options", "delete", "patch"],
 					route: "{*all}",
 				},
 				{
