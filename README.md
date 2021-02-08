@@ -2,7 +2,7 @@
 
 Ports your nextjs api folder into a single azure function.
 
-##Usage
+## Usage
 
 ```shell
 npm i nextjs-azure-function
