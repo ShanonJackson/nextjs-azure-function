@@ -15,7 +15,7 @@ npx nextjs-azure-function
 
 ## FAQ
 
-**Q: Why do this compile into a single function instead of many?**
+**Q: Why does this compile into a single function instead of many?**
 
 **A:** Single function deploys on both AWS and Azure are considered by many to be the best practice, this
 particular function implements a "lazy-parse" meaning the only metric that will increase as your application grows
