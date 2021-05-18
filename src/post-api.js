@@ -1,13 +1,16 @@
 /* eslint-disable */
 const fs = require("fs");
-
+const path = require("path");
 /* move directory into ./api */
-fs.renameSync("./.serverless_nextjs/api-lambda", "./api");
+
+
+const join  = (str) => path.join(process.cwd(), str);
+fs.renameSync(join("./.serverless_nextjs/api-lambda"), join("./api"));
 
 /* create azure function configuration file. */
-fs.mkdirSync("./api/function");
+fs.mkdirSync(join("./api/function"));
 fs.writeFileSync(
-	"./api/function/function.json",
+	join("./api/function/function.json"),
 	JSON.stringify(
 		{
 			bindings: [
@@ -31,4 +34,4 @@ fs.writeFileSync(
 	),
 	"utf8",
 );
-fs.renameSync("./api/index.js", "./api/function/function.js");
+fs.renameSync(join("./api/index.js"), join("./api/function/function.js"));
